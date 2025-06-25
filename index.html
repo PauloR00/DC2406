@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onde eu moro?</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+</head>
+<body>
+    <h1>Consultar CEP</h1>
+
+    
+
+
+    <form class="row g-3">
+        <div class="col-md-2">
+            <label class="form-label" for="">CEP:</label>
+            <input class="form-control" type="number" name="cep" id="cep" onblur="consultarCep()"> 
+        </div>
+
+        <div class="col-md-6">
+            <label class="form-label" for="">Logradouro:</label>
+            <input class="form-control" type="text" name="log" id="log">
+        </div>
+
+        <div class="col-md-2">
+            <label class="form-label" for="">Nº:</label>
+            <input class="form-control" type="number" name="num" id="num">
+        </div>
+
+        <div class="col-md-10">
+            <label class="form-label" for="">Complemento</label>
+            <input class="form-control" type="text" name="comp" id="comp">
+        </div>
+
+        <div class="col-md-2">
+            <label class="form-label" for="">Bairro:</label>
+            <input class="form-control" type="text" name="bai" id="bai">
+        </div>
+
+        <div class="col-md-2">
+            <label class="form-label" for="">Estado:</label>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Selecione...</option>
+                <option value="1">one</option>
+                <option value="2">two</option>
+                <option value="3">three</option>
+            </select>
+        </div>
+            
+        <div class="col-md-2">
+             <label class="form-label" for="">Cidade:</label>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Selecione...</option>
+                <option value="1">one</option>
+                <option value="2">two</option>
+                <option value="3">three</option>
+            </select>
+        </div> 
+
+        <div class="col-md-12">
+            <button class="btn btn-success">Enviar</button>
+            <button class="btn btn-light" type="reset">Limpar</button>
+        </div>
+
+        
+    </form>
+
+
+
+
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
